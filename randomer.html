@@ -1,0 +1,22 @@
+<html>
+    <head>
+<p>JavaScript or smth Evaluating</p>
+    </head>
+    <body>
+        <p>Click the button or whatever to evaluate the thingys</p>
+        <button onclick="randomevaluate()">RandomEvaluate</button>
+        <p id="randomresult"></p>
+        <script>
+            
+            function randomevaluate(){
+                 var a=67
+            var b=420
+            var x=eval("a+b")+"<br>"
+            var y=eval("67*96")+"<br>"
+            var z=eval("b-a")+"<br>"
+            var r=x+y+z
+            document.getElementById("randomresult").innerHTML=r
+            }
+        </script>
+    </body>
+</html>

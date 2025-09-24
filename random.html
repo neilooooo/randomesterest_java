@@ -1,0 +1,27 @@
+<html>
+    <head>
+<p>JavaScript or smth Sorting</p>
+    </head>
+    <body>
+        <p>Click the button or whatever to sort the array or smth in ascending or smth order</p>
+        <button onclick="randomascending()">RandomAscending</button>
+        <button onclick="randomdescending()">RandomDescending</button>
+        <p id="randomresult"></p>
+        <script>
+            var numbers=[67,420,96,101010101010101]
+            document.getElementById("randomresult").innerHTML=numbers
+            function randomascending(){
+                numbers.sort(function(a,b){
+                    return a-b
+                })
+            document.getElementById("randomresult").innerHTML=numbers
+            }
+            function randomdescending(){
+                numbers.sort(function(a,b){
+                    return b-a
+                })
+            document.getElementById("randomresult").innerHTML=numbers
+            }
+        </script>
+    </body>
+</html>
